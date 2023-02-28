@@ -147,6 +147,15 @@ $(function () {
         
     });
 
+    // go to another page on click to contact_desc
+    $('#contact_desc').click(function(){
+        window.location.href="https://www.google.com/maps/place/Hostel-7,+H-7,+Main+Gate+Rd,+Students'+Residential+Zone,+IIT+Area,+Powai,+Mumbai,+Maharashtra+400076/@19.1343399,72.9057782,17z/data=!3m1!4b1!4m15!1m8!3m7!1s0x3be7b8078393e705:0x15daa6b3031f1f68!2sHostel-7,+H-7,+Main+Gate+Rd,+Students'+Residential+Zone,+IIT+Area,+Powai,+Mumbai,+Maharashtra+400076!3b1!8m2!3d19.1343348!4d72.9079669!16s%2Fg%2F11c4v181kb!3m5!1s0x3be7b8078393e705:0x15daa6b3031f1f68!8m2!3d19.1343348!4d72.9079669!16s%2Fg%2F11c4v181kb";
+    })
+
+    $('#contact_desc').mouseover(function(){
+        $(this).css('cursor', 'pointer');
+    });
+
 
 })
 

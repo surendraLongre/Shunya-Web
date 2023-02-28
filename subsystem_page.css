@@ -2,7 +2,7 @@
     transition: all 0.2s;
     font-size: calc(9px + 0.5vw);
     user-select: none;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 body,
@@ -45,7 +45,7 @@ hr {
     /* white-space:pre-line; */
     padding-top: 5% !important;
     padding-bottom: 5% !important;
-    position:relative;
+    position: relative;
 }
 
 #task {
@@ -55,20 +55,20 @@ hr {
 
 #task li {
     font-size: calc(16px + 0.1vw);
-    list-style:none;
+    list-style: none;
     background: url('./architect_image.png') no-repeat left center;
     background-position-x: 35px;
-    vertical-align:top;
+    vertical-align: top;
     /* font-size: calc(16px + 0.3vw); */
-    padding-left:70px;
+    padding-left: 70px;
 }
 
-#in_list{
-    padding-left:15px !important;
+#in_list {
+    padding-left: 15px !important;
     background: url('./architect_image.png') no-repeat left center !important;
     background-position-x: 75px !important;
-    padding-left:108px !important;
-    margin-top:13px;
+    padding-left: 108px !important;
+    margin-top: 13px;
 }
 
 #desc,
@@ -92,7 +92,7 @@ hr {
 
 #desc span {
     font-size: calc(16px + 2vw);
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #members {
@@ -104,12 +104,12 @@ hr {
     float: left;
     /* list-style-position:inside; */
     /* list-style:url('./architect_image.png'); */
-    list-style:none;
+    list-style: none;
     background: url('./architect_image.png') no-repeat left center;
     background-position-x: 35px;
-    vertical-align:middle;
+    vertical-align: middle;
     /* font-size: calc(16px + 0.3vw); */
-    padding-left:70px;
+    padding-left: 70px;
 }
 
 /* carousel */
@@ -133,10 +133,10 @@ hr {
     padding: calc(3px + 0.2vw) calc(5px + 0.5vw);
     border-radius: calc(3px + 0.5vw);
     cursor: pointer;
-    color:#9c1c27;
-    font-size:calc(16px + 2vw);
-    letter-spacing:1.5px;
-    font-weight:800;
+    color: #9c1c27;
+    font-size: calc(16px + 2vw);
+    letter-spacing: 1.5px;
+    font-weight: 800;
     /* font-family:'Times New Roman', Times, serif; */
     font-family: 'Bebas Neue', cursive;
 }
@@ -205,7 +205,10 @@ hr {
     }
 
 
-    #right #nav-list a:hover, #to-relative:hover, #team-relative:hover, #project-relative:hover {
+    #right #nav-list a:hover,
+    #to-relative:hover,
+    #team-relative:hover,
+    #project-relative:hover {
         background: rgb(160, 160, 160);
         color: white;
     }
@@ -231,7 +234,7 @@ hr {
     }
 
     #nav li {
-        list-style:none;
+        list-style: none;
     }
 
     #left {
@@ -310,12 +313,12 @@ hr {
 /* contact us page */
 
 h1:first-child {
-    font-size:calc(16px + 1vw);
+    font-size: calc(16px + 1vw);
     background: url('./location_image.webp') no-repeat left center;
-    background-size:calc(12px + 0.8vw);
+    background-size: calc(12px + 0.8vw);
     background-position-x: calc(5vw);
-    z-index:15;
-    vertical-align:middle;
+    z-index: 15;
+    vertical-align: middle;
     padding: 10px calc(5px + 8vw);
     /* font-size: calc(16px + 0.3vw); */
     /* padding-left:70px; */
@@ -323,122 +326,158 @@ h1:first-child {
 
 h2 {
     font-size: calc(16px + 0.7vw);
-    
+
 }
 
 #contact_desk,
 #contact_task {
-    padding:0px !important;
+    padding: 0px !important;
 }
 
-h3, h2{
+h3,
+h2 {
     padding: 10px calc(5px + 8vw);
 }
 
 h3 {
-    position:relative;
-    top:-25px;
-    margin:0px;
+    position: relative;
+    top: -25px;
+    margin: 0px;
 }
 
 form {
-    display:grid;
-    padding:25px 45px;
-    grid-gap:15px;
+    display: grid;
+    padding: 25px 45px;
+    grid-gap: 15px;
     /* margin: 15% 0px; */
-    margin:5% 0px;
-    
+    margin: 5% 0px;
+
 }
 
 form input {
     /* background:rgb(244, 244, 129); */
     border-radius: 5px;
-    padding:8px 15px;
-    border:2px #9c1c27 solid;
+    padding: 8px 15px;
+    border: 2px #9c1c27 solid;
 }
 
 #submit {
     /* color:#312f64; */
-    color:whitesmoke;
-    opacity:0.9;
-    cursor:pointer;
-    background:#9c1c27;
-    font-weight:600;
+    color: whitesmoke;
+    opacity: 0.9;
+    cursor: pointer;
+    background: #9c1c27;
+    font-weight: 600;
 }
 
 ::placeholder {
-    color:#312f64;
+    color: #312f64;
     opacity: 1;
 }
 
 form div {
-    color:#9c1c27;
-    font-weight:700;
-    letter-spacing:1px;
-    font-size:1.2em;
+    color: #9c1c27;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.2em;
 }
 
 form span {
-    font-size:2em;
-    font-weight:bold;
-    letter-spacing:0px;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0px;
 }
 
 form div1 {
-    font-size:1.8em;
-    color:#312f64;
-    opacity:0.5;
-    font-weight:700;
+    font-size: 1.8em;
+    color: #312f64;
+    opacity: 0.5;
+    font-weight: 700;
 }
 
 form div2 {
-    font-size:1.2em;
-    color:green;
-    font-size:1500;
+    font-size: 1.2em;
+    color: green;
+    font-size: 1500;
     /* display:none; */
 }
 
 #contact {
-    color:#312f64;
-    display:flex;
-    justify-content:space-around;
-    align-content:center;
-    align-items:center; 
+    background: url('https://www.shutterstock.com/image-illustration/contact-us-icon-phone-email-260nw-1151872529.jpg') no-repeat !important;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT61nEFWha9zb9PyFGpJTCr2uOvTU5pHmM8jc9m0qCAcGV-lujJLK3AOoWrDxivXKxj4Qk&usqp=CAU') no-repeat;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: bottom;
+    color: #312f64;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    mix-blend-mode: hard-light;
 }
 
-#contact name{
-    font-size:1.2em;
-    color:#9c1c27;
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUplvfMh5hZXPuNuMqVZUDPH5WScpuTwukxQ&usqp=CAU') no-repeat left center;
-    background-size:calc(12px + 0.8vw);
+#contact name {
+    font-size: 1.2em;
+    color: #9c1c27;
+    /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUplvfMh5hZXPuNuMqVZUDPH5WScpuTwukxQ&usqp=CAU') no-repeat left center;
+    background-size: calc(12px + 0.8vw);
     background-position-x: calc(5vw);
-    z-index:15;
-    vertical-align:middle;
-    padding: 10px calc(5px + 8vw);
-    
+    z-index: 15;
+    vertical-align: middle; */
+    padding: 10px calc(5px + 7vw);
+
 }
 
-#contact designation{
-    color:#7b4e66;
-    background: url('https://t4.ftcdn.net/jpg/03/05/75/77/360_F_305757777_8zQDaRz3Y9tW8Jpd0jdC5NQoCQPgav5Z.jpg') no-repeat left center;
-    background-size:calc(12px + 0.8vw);
+#contact designation {
+    color: #7b4e66;
+    /* background: url('https://t4.ftcdn.net/jpg/03/05/75/77/360_F_305757777_8zQDaRz3Y9tW8Jpd0jdC5NQoCQPgav5Z.jpg') no-repeat left center; */
+    /* background-size: calc(12px + 0.8vw);
     background-position-x: calc(5vw);
-    z-index:15;
-    vertical-align:middle;
-    padding: 10px calc(5px + 8vw);
+    z-index: 15;
+    vertical-align: middle; */
+    padding: 10px calc(5px + 7vw);
+    position:relative;
+    /* top:5px; */
+    line-height:40px;
 }
 
 #contact phone {
     /* color:rgb(42, 43, 97); */
-    color:#6d4e7b;
-    opacity:0.7;
-    user-select:all;
-    font-weight:500;
+    color: #6d4e7b;
+    opacity: 0.7;
+    user-select:text;
+    font-weight: 500;
+    margin-top:5px !important;
 
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLVjfNdkeF-5aiFOyMaPTPUSS47g6CTaWzVQ&usqp=CAU') no-repeat left center;
-    background-size:calc(12px + 0.8vw);
+    /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLVjfNdkeF-5aiFOyMaPTPUSS47g6CTaWzVQ&usqp=CAU') no-repeat left center;
+    background-size: calc(12px + 0.8vw);
     background-position-x: calc(5vw);
-    z-index:15;
-    vertical-align:middle;
-    padding: 10px calc(5px + 8vw);
-}   
+    z-index: 15;
+    vertical-align: middle; */
+    padding: 10px calc(5px + 7vw);
+}
+
+
+#contact_task {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT61nEFWha9zb9PyFGpJTCr2uOvTU5pHmM8jc9m0qCAcGV-lujJLK3AOoWrDxivXKxj4Qk&usqp=CAU') no-repeat !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-position-x: center;
+    /* background:black !important; */
+}
+
+#contact_desc {
+    background: url('http://wallpaperset.com/w/full/7/5/a/545589.jpg') no-repeat !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed;
+    background-position-x: center;
+}
+
+#contact span {
+    color:#9c1c27;
+    user-select:none;
+}
