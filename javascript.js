@@ -22,7 +22,7 @@ $(function () {
     $('input').focus(function () {
         $(this).css('background', '#e3e3e3');
     })
-    $('#footer input').blur(function () {
+    $('input').blur(function () {
         $(this).css('background', 'white');
     })
     $('#footer input').addClass('ui-corner-all');
@@ -139,6 +139,12 @@ $(function () {
     $('#project').mouseout(function () {
         
         $('#project-list').css('display', 'none');
+    });
+
+
+    // submitting the subscribe form
+    $('#submit').click(function(){
+        
     });
 
 

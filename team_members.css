@@ -62,6 +62,7 @@ hr {
     text-align: center;
     text-transform: capitalize;
     /* word-break:break-all; */
+    white-space:nowrap;
 }
 
 .name-position {

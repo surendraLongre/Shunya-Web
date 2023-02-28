@@ -45,6 +45,7 @@ hr {
     /* white-space:pre-line; */
     padding-top: 5% !important;
     padding-bottom: 5% !important;
+    position:relative;
 }
 
 #task {
@@ -72,7 +73,8 @@ hr {
 
 #desc,
 #task,
-#members {
+#members,
+#contact {
     border-radius: calc(3px + 1vw);
     min-height: 100px;
     background: white;
@@ -338,3 +340,105 @@ h3 {
     top:-25px;
     margin:0px;
 }
+
+form {
+    display:grid;
+    padding:25px 45px;
+    grid-gap:15px;
+    /* margin: 15% 0px; */
+    margin:5% 0px;
+    
+}
+
+form input {
+    /* background:rgb(244, 244, 129); */
+    border-radius: 5px;
+    padding:8px 15px;
+    border:2px #9c1c27 solid;
+}
+
+#submit {
+    /* color:#312f64; */
+    color:whitesmoke;
+    opacity:0.9;
+    cursor:pointer;
+    background:#9c1c27;
+    font-weight:600;
+}
+
+::placeholder {
+    color:#312f64;
+    opacity: 1;
+}
+
+form div {
+    color:#9c1c27;
+    font-weight:700;
+    letter-spacing:1px;
+    font-size:1.2em;
+}
+
+form span {
+    font-size:2em;
+    font-weight:bold;
+    letter-spacing:0px;
+}
+
+form div1 {
+    font-size:1.8em;
+    color:#312f64;
+    opacity:0.5;
+    font-weight:700;
+}
+
+form div2 {
+    font-size:1.2em;
+    color:green;
+    font-size:1500;
+    /* display:none; */
+}
+
+#contact {
+    color:#312f64;
+    display:flex;
+    justify-content:space-around;
+    align-content:center;
+    align-items:center; 
+}
+
+#contact name{
+    font-size:1.2em;
+    color:#9c1c27;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUplvfMh5hZXPuNuMqVZUDPH5WScpuTwukxQ&usqp=CAU') no-repeat left center;
+    background-size:calc(12px + 0.8vw);
+    background-position-x: calc(5vw);
+    z-index:15;
+    vertical-align:middle;
+    padding: 10px calc(5px + 8vw);
+    
+}
+
+#contact designation{
+    color:#7b4e66;
+    background: url('https://t4.ftcdn.net/jpg/03/05/75/77/360_F_305757777_8zQDaRz3Y9tW8Jpd0jdC5NQoCQPgav5Z.jpg') no-repeat left center;
+    background-size:calc(12px + 0.8vw);
+    background-position-x: calc(5vw);
+    z-index:15;
+    vertical-align:middle;
+    padding: 10px calc(5px + 8vw);
+}
+
+#contact phone {
+    /* color:rgb(42, 43, 97); */
+    color:#6d4e7b;
+    opacity:0.7;
+    user-select:all;
+    font-weight:500;
+
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLVjfNdkeF-5aiFOyMaPTPUSS47g6CTaWzVQ&usqp=CAU') no-repeat left center;
+    background-size:calc(12px + 0.8vw);
+    background-position-x: calc(5vw);
+    z-index:15;
+    vertical-align:middle;
+    padding: 10px calc(5px + 8vw);
+}   
