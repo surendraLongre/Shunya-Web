@@ -48,10 +48,13 @@ $(function () {
     $('#sofa').mouseover(function () {
         mouse_over('.architecture', '#sofa');
     })
+    $('#brick_img').mouseover(function () {
+        mouse_over('.civil', '#brick_img');
+    })
 
 
     // upon mouse leaving
-    var array = ['#vent', '#sofa', '#tv', '#money_plant', '#light_bulb'];
+    var array = ['#vent', '#sofa', '#tv', '#money_plant', '#light_bulb', '#brick_img'];
 
     $('#tv-shunya-logo').mouseover(function () {
         $('.communication').fadeIn();
@@ -73,6 +76,9 @@ $(function () {
     })
     $('#sofa').mouseout(function () {
         mouse_out('.architecture', '#sofa');
+    })
+    $('#brick_img').mouseout(function () {
+        mouse_out('.civil', '#brick_img');
     })
 
     function mouse_over(element_class, image_element) {
