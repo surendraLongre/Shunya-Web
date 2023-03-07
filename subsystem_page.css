@@ -11,7 +11,7 @@ html {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     /* background: #f2f2f2; */
-    background: radial-gradient(circle,#f2f2f2 10%,white);
+    background: radial-gradient(circle, #f2f2f2 10%, white);
 
 }
 
@@ -52,7 +52,7 @@ hr {
 #task {
     white-space: pre-line;
     padding: 10px calc(0px + 0vw) !important;
-    padding-right:calc(5px+2vw) !important;
+    padding-right: calc(5px+2vw) !important;
     display: flex;
     flex: 1.5 !important;
     /* align-items:center; */
@@ -60,8 +60,8 @@ hr {
 
 
 
-#task_changed{
-    flex:1.2;
+#task_changed {
+    flex: 1.2;
     /* width:fit-content; */
 }
 
@@ -73,12 +73,12 @@ hr {
     align-self:center; */
 }
 
-#edited_members{
-    flex:1;
+#edited_members {
+    flex: 1;
 }
 
 #edited_members li {
-    list-style:none;
+    list-style: none;
 }
 
 #task_changed li {
@@ -107,11 +107,11 @@ hr {
     min-height: 100px;
     background: white;
     padding: 10px calc(5px + 8vw);
-    border-left:#9c1c27 solid 2px;
-    border-top:#312f64 solid 2px;
-    border-bottom:#9c1c27 solid 2px;
-    border-right:#312f64 solid 2px;
-    margin:5px;
+    border-left: #9c1c27 solid 2px;
+    border-top: #312f64 solid 2px;
+    border-bottom: #9c1c27 solid 2px;
+    border-right: #312f64 solid 2px;
+    margin: 5px;
     /* text-indent: 2lh; */
 }
 
@@ -148,17 +148,17 @@ hr {
 /* carousel */
 #carousel {
     margin: 0px auto;
-    text-align:center;
+    text-align: center;
 }
 
 #carousel-image {
     /* height: 70vh; */
     /* height: fit-content;
     width: fit-content; */
-    object-fit:cover;
+    object-fit: cover;
     width: 50%;
     aspect-ratio: 1.61803398875;
-    border-radius:25px;
+    border-radius: 25px;
     box-shadow: 0px 0px 5px 5px #9c1c27;
     /* margin: 0px auto; */
 }
@@ -184,6 +184,16 @@ hr {
     height: max-content;
 }
 
+@media (min-width:1500px) {
+
+    #desc,
+    #task,
+    #members,
+    #contact {
+        aspect-ratio: 1.61803398875;
+    }
+}
+
 
 @media only screen and (min-width: 877px) {
 
@@ -194,7 +204,7 @@ hr {
         box-sizing: border-box;
         /* margin:5px; */
     }
-    
+
 
     #content {
         margin-top: auto;
@@ -305,10 +315,10 @@ hr {
     #task {
         white-space: pre-line;
         padding: 10px calc(0px + 0vw) !important;
-        padding-right:calc(5px+2vw) !important;
+        padding-right: calc(5px+2vw) !important;
         display: flex;
         flex: 1.5 !important;
-        flex-direction:column;
+        flex-direction: column;
         /* align-items:center; */
     }
 
@@ -487,18 +497,18 @@ form div2 {
     z-index: 15;
     vertical-align: middle; */
     padding: 10px calc(5px + 7vw);
-    position:relative;
+    position: relative;
     /* top:5px; */
-    line-height:40px;
+    line-height: 40px;
 }
 
 #contact phone {
     /* color:rgb(42, 43, 97); */
     color: #6d4e7b;
     opacity: 0.7;
-    user-select:text;
+    user-select: text;
     font-weight: 500;
-    margin-top:5px !important;
+    margin-top: 5px !important;
 
     /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLVjfNdkeF-5aiFOyMaPTPUSS47g6CTaWzVQ&usqp=CAU') no-repeat left center;
     background-size: calc(12px + 0.8vw);
@@ -527,6 +537,6 @@ form div2 {
 }
 
 #contact span {
-    color:#9c1c27;
-    user-select:none;
+    color: #9c1c27;
+    user-select: none;
 }
