@@ -10,7 +10,8 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background: #f2f2f2;
+    /* background: #f2f2f2; */
+    background: radial-gradient(circle,#f2f2f2 10%,white);
 
 }
 
@@ -49,23 +50,50 @@ hr {
 }
 
 #task {
-    list-style: url('.');
     white-space: pre-line;
+    padding: 10px calc(0px + 0vw) !important;
+    padding-right:calc(5px+2vw) !important;
+    display: flex;
+    flex: 1.5 !important;
+    /* align-items:center; */
 }
 
-#task li {
+
+
+#task_changed{
+    flex:1.2;
+    /* width:fit-content; */
+}
+
+#task_changed ul {
+    /* display:flex; */
+    /* text-align:center; */
+    /* flex-direction:column;
+    gap:5px;
+    align-self:center; */
+}
+
+#edited_members{
+    flex:1;
+}
+
+#edited_members li {
+    list-style:none;
+}
+
+#task_changed li {
     font-size: calc(16px + 0.1vw);
     list-style: none;
-    background: url('./architect_image.png') no-repeat left center;
+    /* background: url('./architect_image.png') no-repeat left center; */
     background-position-x: 35px;
     vertical-align: top;
     /* font-size: calc(16px + 0.3vw); */
-    padding-left: 70px;
+    /* padding-left: 20%; */
 }
 
-#in_list {
+.in_list {
     padding-left: 15px !important;
-    background: url('./architect_image.png') no-repeat left center !important;
+    /* background: url('./architect_image.png') no-repeat left center !important; */
     background-position-x: 75px !important;
     padding-left: 108px !important;
     margin-top: 13px;
@@ -75,10 +103,15 @@ hr {
 #task,
 #members,
 #contact {
-    border-radius: calc(3px + 1vw);
+    border-radius: calc(10px + 1vw);
     min-height: 100px;
     background: white;
     padding: 10px calc(5px + 8vw);
+    border-left:#9c1c27 solid 2px;
+    border-top:#312f64 solid 2px;
+    border-bottom:#9c1c27 solid 2px;
+    border-right:#312f64 solid 2px;
+    margin:5px;
     /* text-indent: 2lh; */
 }
 
@@ -96,7 +129,7 @@ hr {
 }
 
 #members {
-    margin-bottom: 20px;
+    /* margin-bottom: auto; */
 
 }
 
@@ -115,13 +148,18 @@ hr {
 /* carousel */
 #carousel {
     margin: 0px auto;
+    text-align:center;
 }
 
 #carousel-image {
     /* height: 70vh; */
-    height: max-content;
-    width: fit-content;
-    width: 100%;
+    /* height: fit-content;
+    width: fit-content; */
+    object-fit:cover;
+    width: 50%;
+    aspect-ratio: 1.61803398875;
+    border-radius:25px;
+    box-shadow: 0px 0px 5px 5px #9c1c27;
     /* margin: 0px auto; */
 }
 
@@ -156,6 +194,7 @@ hr {
         box-sizing: border-box;
         /* margin:5px; */
     }
+    
 
     #content {
         margin-top: auto;
@@ -261,6 +300,16 @@ hr {
         font-size: 16px;
         text-decoration: none;
         list-style: none;
+    }
+
+    #task {
+        white-space: pre-line;
+        padding: 10px calc(0px + 0vw) !important;
+        padding-right:calc(5px+2vw) !important;
+        display: flex;
+        flex: 1.5 !important;
+        flex-direction:column;
+        /* align-items:center; */
     }
 
     body {
