@@ -55,6 +55,7 @@ hr {
     padding-right: calc(5px+2vw) !important;
     display: flex;
     flex: 1.5 !important;
+    align-items:start;
     /* align-items:center; */
 }
 
@@ -66,6 +67,7 @@ hr {
 }
 
 #task_changed ul {
+    /* line-height:25px; */
     /* display:flex; */
     /* text-align:center; */
     /* flex-direction:column;
@@ -96,8 +98,9 @@ hr {
     /* background: url('./architect_image.png') no-repeat left center !important; */
     background-position-x: 75px !important;
     padding-left: 108px !important;
-    margin-top: 13px;
+    /* margin-top: 13px; */
 }
+
 
 #desc,
 #task,
@@ -326,7 +329,7 @@ hr {
         margin: auto 7px;
     }
 
-    img {
+    button img {
         height: 25px;
     }
 
