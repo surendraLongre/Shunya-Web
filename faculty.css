@@ -1,0 +1,83 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(circle, #fff, rgb(230, 230, 230));
+    padding-bottom: 50px;
+    scroll-behavior: smooth;
+}
+
+.flex-outer {
+	display: flex;
+	flex-wrap: wrap;
+	/* align-content: center; */
+	gap: 3vmin;
+	justify-content:center;
+	padding:50px;
+
+}
+
+.flex-outer div {
+	/* flex: 1; */
+	display: grid;
+	grid-template-rows: minmax(300px, 1fr) auto auto;
+	grid-auto-columns:min-content;
+	grid-auto-flow:dense;
+	align-items: center;
+}
+
+.flex-outer img {
+	width: 100%;
+	min-width: 300px;
+	clip-path: circle();
+	object-fit: cover;
+	clip-rule: nonzero;
+	overflow:hidden;
+	margin-bottom:0px;
+	padding-bottom:0px;
+}
+
+fac-name, fac-designation {
+	display:flex;
+	justify-content:center;
+	/* padding: 0px 30%; */
+	/* word-wrap:break-word;
+	word-break:break-all;
+	break-inside: auto; */
+}
+
+fac-name {
+	margin-top:10px;
+
+
+	/* copied text */
+	letter-spacing: 2px;
+    font-weight: 700;
+    font-size: calc(16px + 0.3vmin);
+    text-align: center;
+    text-transform: capitalize;
+    /* word-break:break-all; */
+    white-space:nowrap;
+}
+
+fac-designation {
+	/* copied text */
+	font-weight: 400;
+    font-size: calc(12px + 0.5vmin);
+    text-align: center;
+}
+
+
+/* text from subsystem page */
+h1 {
+    text-align: center;
+    color: #9c1c27;
+    text-shadow: -1px 2px #316377;
+    font-size: calc(16px + 2vw);
+}
+
+hr {
+    height: 4px;
+    background: linear-gradient(to left, rgb(230, 230, 230), #9c1c27, rgb(228, 228, 228));
+}

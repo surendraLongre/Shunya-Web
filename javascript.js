@@ -33,11 +33,11 @@ $(function () {
     //show subsystems upon hovering
     $('#vent').mouseover(function () {
         mouse_over('.mechanics', '#vent');
-        $('#wind_window').css('display', 'block');
+        $('#wind_window').slideDown();
     })
     $('#light_bulb').mouseover(function () {
         mouse_over('.electrical', '#light_bulb');
-        $('#green_light').css('display', 'block');
+        $('#green_light').slideDown();
     })
     $('#tv').mouseover(function () {
         mouse_over('.communication', '#tv');
@@ -62,11 +62,11 @@ $(function () {
 
     $('#vent').mouseout(function () {
         mouse_out('.mechanics', '#vent');
-        $('#wind_window').css('display', 'none');
+        $('#wind_window').slideUp();
     })
     $('#light_bulb').mouseout(function () {
         mouse_out('.electrical', '#light_bulb');
-        $('#green_light').css('display', 'none');
+        $('#green_light').slideUp();
     })
     $('#tv').mouseout(function () {
         mouse_out('.communication', '#tv');
@@ -178,3 +178,124 @@ function team_redirect() {
     alert(value);
 }
 // team_redirect();
+
+
+// translate the images
+// image_width:752px, margin: 94
+// initial width changes: image1: -940px, 2: -840px,3: 1592px
+// left: image2: 940px, iamge3: 1692px
+
+var images=['#carousel-image1', '#carousel-image2', '#carousel-image3'];
+var index=0;
+translate_active_image=-940;
+translate_next1_image=-840;
+translate_next2_image=-752;
+
+// left_active_image=
+
+var interval = setInterval(() => {
+    
+    if(index==0){
+        active_image=images[index];
+        next_image=images[index+1];
+        next_image2=images[index+2];
+        index++;
+    }
+
+    else if(index==1){
+        active_image=images[index];
+        next_image=images[index+1];
+        next_image2=images[index-1];
+        clearInterval(interval);
+        index++;
+    }
+
+    else if(index==2){
+        active_image=images[index];
+        next_image=images[index-2];
+        next_image2=images[index-1];
+        // index=0;
+        // clearInterval(interval);
+    }
+    console.log(index);
+    console.log(active_image);
+    console.log(next_image);
+    console.log(next_image2);
+
+    // if(translate_active_image < -2444){
+    //     translate_active_image = -200;
+    //     console.log("Value of translate_active_image: ", translate_active_image)
+    // }
+    translate_active=translate_active_image+"px";
+    translate_next1=translate_next1_image+"px";
+    translate_next2=translate_next2_image+"px";
+
+    console.log(translate_active);
+    console.log(translate_next1);
+    console.log(translate_next2);
+
+    $(active_image).css('transform',`translateX(${translate_active})`);
+    $(next_image).css('transform', `translateX(${translate_next1})`);
+    $(next_image2).css('transform',`translateX(${translate_next2})`);
+    
+    setTimeout(() => {
+        // $(active_image).css('left','2632px');
+        translate_active_image-=752;
+        translate_next1_image-=752;
+        translate_next2_image-=752;
+    }, 1000);
+}, 2000);
+
+var button_interval = setInterval(() => {
+    var current_img=$('.carousel-black');
+    var next_img=current_img.next();
+    console.log("next_img: "+next_img.length);
+    if(next_img.length){
+        current_img.removeClass('carousel-black').addClass('text-white');
+        next_img.addClass('carousel-black');
+    }
+    else {
+        clearInterval(button_interval);
+    }
+}, 2000);
+
+
+
+
+
+// button stats ----------
+// button clicks and changes
+
+$('#carousel-button1').click(function(){
+    clearInterval(interval);
+    clearInterval(button_interval);
+    $('#carousel-image1').css('transform', 'translateX(0px)');
+    $('#carousel-image2').css('transform','translateX(0px)');
+    $('#carousel-image3').css('transform','translateX(0px)');
+
+    $(this).addClass('carousel-black');
+    $('#carousel-button2, #carousel-button3').removeClass('carousel-black');
+
+})
+
+$('#carousel-button2').click(function(){
+    clearInterval(interval);
+    clearInterval(button_interval);
+    $('#carousel-image1').css('transform', 'translateX(-940px)');
+    $('#carousel-image2').css('transform','translateX(-840px)');
+    $('#carousel-image3').css('transform','translateX(-752px)');
+    
+    $(this).addClass('carousel-black');
+    $('#carousel-button1, #carousel-button3').removeClass('carousel-black');
+})
+
+$('#carousel-button3').click(function(){
+    clearInterval(interval);
+    clearInterval(button_interval);
+    $('#carousel-image1').css('transform', 'translateX(-1692px)');
+    $('#carousel-image2').css('transform','translateX(-1692px)');
+    $('#carousel-image3').css('transform','translateX(-1592px)');
+
+    $(this).addClass('carousel-black');
+    $('#carousel-button1, #carousel-button2').removeClass('carousel-black');
+})

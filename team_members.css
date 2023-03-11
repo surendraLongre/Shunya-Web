@@ -15,6 +15,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     background: radial-gradient(circle, #fff, rgb(230, 230, 230));
     padding-bottom: 50px;
+    scroll-behavior: smooth;
 }
 
 #container {
@@ -68,6 +69,7 @@ hr {
 .name-position {
     position: relative;
     top: -50px;
+    margin-top:5px;
 }
 
 .designation {
@@ -122,7 +124,7 @@ hr {
 ion-icon {
     cursor: pointer;
     color: blue;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0px;
     font-size: 1.2em;
 }
@@ -140,4 +142,9 @@ ion-icon:active {
 
 #anant {
     font-size: calc(9px + 0.5vw);
+}
+
+.outer {
+    display: grid !important;
+    grid-template-rows: minmax(30px, 1fr) auto auto !important    ;
 }

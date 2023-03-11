@@ -20,6 +20,22 @@ hr {
     background: linear-gradient(to left, rgb(230, 230, 230), #914461, rgb(228, 228, 228));
 }
 
+#subs_name {
+    margin: 0px auto;
+    margin-bottom: calc(5px + 1vh);
+    /* background: #312f64; */
+    /* background:#1d7e9b; */
+    padding: calc(3px + 0.2vw) calc(5px + 0.5vw);
+    border-radius: calc(3px + 0.5vw);
+    cursor: pointer;
+    color: #9c1c27;
+    font-size: calc(16px + 2vw);
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    /* font-family:'Times New Roman', Times, serif; */
+    font-family: 'Bebas Neue', cursive;
+}
+
 #desc-task,
 #contact_desc-task {
     display: flex;
@@ -27,6 +43,10 @@ hr {
     margin: 20px 0px;
     flex-wrap: wrap;
     /* margin-left:calc(10px + 3vw); */
+}
+
+#contact_desc-task{
+    margin:15px;
 }
 
 #desc,
@@ -97,7 +117,7 @@ hr {
     padding-left: 15px !important;
     /* background: url('./architect_image.png') no-repeat left center !important; */
     background-position-x: 75px !important;
-    padding-left: 108px !important;
+    padding-left: 38px !important;
     /* margin-top: 13px; */
 }
 
@@ -108,7 +128,7 @@ hr {
 #contact {
     border-radius: calc(10px + 1vw);
     min-height: 100px;
-    background: white;
+    /* background: white; */
     padding: 10px calc(5px + 8vw);
     border-left: #9c1c27 solid 2px;
     border-top: #312f64 solid 2px;
@@ -148,39 +168,97 @@ hr {
     padding-left: 70px;
 }
 
+
+
+
 /* carousel */
 #carousel {
     margin: 0px auto;
+    position: relative;
+    width:940px;
+    min-height:487.5px;
+    background-color:rgb(230,230,230);
+    display:flex;
+    padding: 100px;
     text-align: center;
+    border-radius: 15px;
+    overflow: hidden;
+/*     gap: 50px; */
 }
 
-#carousel-image {
+#carousel-buttons {
+    position:absolute;
+    bottom:15px;    
+    left:40%;
+    display: flex;
+    gap:15px;
+}
+
+#carousel-button1, #carousel-button2, #carousel-button3 {
+    min-width:50px;
+    min-height:8px;
+    /* background: black; */
+    transition: background 0.7s;
+    border-radius:5px;
+}
+
+.text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    background: rgb(255 255 255);
+}
+
+.carousel-black {
+    background: #9c1c27;
+}
+
+#carousel-image1 {
     /* height: 70vh; */
     /* height: fit-content;
     width: fit-content; */
-    object-fit: cover;
-    width: 50%;
-    aspect-ratio: 1.61803398875;
+    position:absolute;
     border-radius: 25px;
-    box-shadow: 0px 0px 5px 5px #9c1c27;
+    width:80%;
+    height:80%;
+    top:10%;
+    /* box-shadow: 0px 0px 5px 5px rgb(190,190,190); */
+    transition: transform 0.5s;
     /* margin: 0px auto; */
 }
 
-#subs_name {
-    margin: 0px auto;
-    margin-bottom: calc(5px + 1vh);
-    /* background: #312f64; */
-    /* background:#1d7e9b; */
-    padding: calc(3px + 0.2vw) calc(5px + 0.5vw);
-    border-radius: calc(3px + 0.5vw);
-    cursor: pointer;
-    color: #9c1c27;
-    font-size: calc(16px + 2vw);
-    letter-spacing: 1.5px;
-    font-weight: 800;
-    /* font-family:'Times New Roman', Times, serif; */
-    font-family: 'Bebas Neue', cursive;
+/* #carousel-image1:hover{
+    transform: translateX(-940px);
+} */
+
+/* #carousel-image2:hover{
+    transform: translateX(-840px);
+} */
+
+#carousel-image3 {
+	position:absolute;
+    border-radius: 25px;
+    width:80%;
+    height:80%;
+    top:10%;
+    left: 1692px;
+    /* box-shadow: 0px 0px 5px 5px rgb(190,190,190); */
+    transition:transform 0.5s;
 }
+
+/* #carousel-image3:hover{
+    transform: translateX(calc(-840px - 752px));
+} */
+
+#carousel-image2 {
+	position:absolute;
+    border-radius: 25px;
+    width:80%;
+    height:80%;
+    top:10%;
+    left:100%;
+    /* box-shadow: 0px 0px 5px 5px rgb(190,190,190); */
+    transition:transform 0.5s;
+};
 
 #subs_name img {
     width: calc(50px + 10vw);
@@ -192,7 +270,9 @@ hr {
     #desc,
     #task,
     #members,
-    #contact {
+    #contact,
+   #contact_desc,
+  #contact_task {
         aspect-ratio: 1.61803398875;
     }
 }
@@ -459,14 +539,14 @@ form div1 {
 
 form div2 {
     font-size: 1.2em;
-    color: green;
+    color: rgb(0, 176, 0);
     font-size: 1500;
     /* display:none; */
 }
 
 #contact {
-    background: url('https://www.shutterstock.com/image-illustration/contact-us-icon-phone-email-260nw-1151872529.jpg') no-repeat !important;
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT61nEFWha9zb9PyFGpJTCr2uOvTU5pHmM8jc9m0qCAcGV-lujJLK3AOoWrDxivXKxj4Qk&usqp=CAU') no-repeat;
+    /* background: url('https://www.shutterstock.com/image-illustration/contact-us-icon-phone-email-260nw-1151872529.jpg') no-repeat !important; */
+    background:black;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-attachment: fixed;
@@ -474,10 +554,17 @@ form div2 {
     background-position-y: bottom;
     color: #312f64;
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-around;
     align-content: center;
+    white-space:nowrap;
+    font-size:fit-content;
     align-items: center;
-    mix-blend-mode: hard-light;
+    /* mix-blend-mode:; */
+    /* background: repeating-radial-gradient(circle,#dfd7e3, transparent) !important; */
+    /* background: url('https://images.pexels.com/photos/753548/pexels-photo-753548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    background-position-y:-450px;
+    background:linear-gradient(to bottom, rgb(136, 181, 172), rgb(144, 187, 198));
 }
 
 #contact name {
@@ -523,20 +610,25 @@ form div2 {
 
 
 #contact_task {
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT61nEFWha9zb9PyFGpJTCr2uOvTU5pHmM8jc9m0qCAcGV-lujJLK3AOoWrDxivXKxj4Qk&usqp=CAU') no-repeat !important;
+    /* background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT61nEFWha9zb9PyFGpJTCr2uOvTU5pHmM8jc9m0qCAcGV-lujJLK3AOoWrDxivXKxj4Qk&usqp=CAU') no-repeat !important; */
+    background: repeating-radial-gradient(rgb(182, 208, 208), rgb(196, 216, 228), transparent);
+    /* background:white; */
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-attachment: fixed;
     background-position-x: center;
-    /* background:black !important; */
 }
 
 #contact_desc {
-    background: url('http://wallpaperset.com/w/full/7/5/a/545589.jpg') no-repeat !important;
+    /* background: url('http://wallpaperset.com/w/full/7/5/a/545589.jpg') no-repeat !important; */
+    /* background: repeating-radial-gradient(#c6c5e8, #cdb1b3, transparent); */
+    /* background: repeating-radial-gradient(rgb(182, 208, 208), rgb(196, 216, 228), transparent); */
+    background:url('https://cdn.wallpapersafari.com/57/99/5xXlZT.jpg');
+    /* backdrop-filter:blur(100); */
     background-repeat: no-repeat !important;
-    background-size: cover !important;
+    background-size:contain !important;
     background-attachment: fixed;
-    background-position-x: center;
+    background-position-x: -200px;
 }
 
 #contact span {
